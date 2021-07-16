@@ -54,12 +54,13 @@ bot.on('message', (msg) =>{
 						.setAuthor(alliance.name,'https://www.leagueofautomatednations.com/obj/'+alliance.logo,'https://www.leagueofautomatednations.com/a/'+abbreviation)
 						.addField('ranking',
 							'`RCL: ' + alliance.rcl_rank + '`\n' +
+							'`MEMBER_RANK: ' + alliance.members_rank + '`\n' +
 							'`PWR: ' + alliance.alliance_power_rank + '|combined: ' + alliance.combined_power_rank + '`\n' +
 							'`GCL: ' + alliance.alliance_gcl_rank + '|combined: ' + alliance.combined_gcl_rank + '`'
 						)
 						.addField('other',
-							'`members: ' + alliance.members.length + '`\n' +
-							''
+							'`members: ' + alliance.members.length + '` `spawns: ' + alliance.spawns_rank + '`\n' +
+							'`slack: #' + alliance.slack_channel + '`'
 						)
 						msg.channel.send(allianceInfoEmbed)
 					}
