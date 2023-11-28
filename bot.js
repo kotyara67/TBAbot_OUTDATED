@@ -5,6 +5,8 @@ let {MessageEmbed} = require('discord.js')
 let URL = 'https://www.leagueofautomatednations.com/alliances.js'
 let prefix = '!'
 
+let fufu = "fufu"
+
 let bot = new Discord.Client()
 bot.login('ODY1Mjg2NTg3MzEzODE1NjIz.YPBy7g.vWG9Y8ymIduLWIL1h4Z57TqO0Ig')
 
